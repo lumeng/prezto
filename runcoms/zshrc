@@ -13,11 +13,16 @@ fi
 # Customize to your needs...
 
 # HUB > Git
-alias git=hub
-if type compdef >/dev/null; then
-   compdef hub=git
-fi
+#alias git=hub
+#if type compdef >/dev/null; then
+#   compdef hub=git
+#fi
 
 # Git escape wonderfulness
 autoload -Uz git-escape-magic
 git-escape-magic
+
+# Source my own .zshrc
+if [[ -s ~/.zshrc_meng ]]; then
+    source ~/.zshrc_meng
+fi
