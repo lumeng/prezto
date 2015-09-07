@@ -29,3 +29,13 @@ fi
 
 PERL_MB_OPT="--install_base \"/Users/lumeng/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/lumeng/perl5"; export PERL_MM_OPT;
+
+#################################################################################
+#+ access the online help:
+##
+
+unalias run-help
+autoload run-help
+HELPDIR=/usr/local/share/zsh/help
+
+## END
