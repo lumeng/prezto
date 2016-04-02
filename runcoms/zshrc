@@ -27,8 +27,9 @@ if [[ -s ~/.zshrc_meng ]]; then
     source ~/.zshrc_meng
 fi
 
-PERL_MB_OPT="--install_base \"/Users/lumeng/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/Users/lumeng/perl5"; export PERL_MM_OPT;
+export PERL_MB_OPT="--install_base \"$HOME/perl5\"";
+export PERL_MM_OPT="INSTALL_BASE=$HOME/perl5";
+
 
 #################################################################################
 #+ access the online help:
